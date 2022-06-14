@@ -79,6 +79,7 @@ main {
   align-items: center;
   gap: 18px;
   padding-left: 5px;
+  color: #3f322b;
 }
 
 .profile-photo {
@@ -100,10 +101,12 @@ main {
   justify-content: center;
   gap: 15px;
   padding-top: 15px;
+  color: #3f322b;
 }
 
 .tecniche {
   text-align: center;
+  color: #3f322b;
 }
 
 .tecniche i {
@@ -113,7 +116,9 @@ main {
 .fa-html5,
 .fa-css3-alt,
 .fa-js-square,
-.fa-react {
+.fa-react,
+.fa-git-alt,
+.fa-github {
   font-size: 40px;
 }
 
@@ -138,6 +143,14 @@ main {
   font-size: 30px;
 }
 
+.fa-git-alt {
+  color: #e44c30;
+}
+
+.fa-github {
+  color: #000;
+}
+
 .others {
   margin-top: 20px;
 }
@@ -159,7 +172,7 @@ footer {
 }
 
 footer i {
-  font-size: 25px;
+  font-size: 30px;
   padding-right: 15px;
   cursor: pointer;
 }
@@ -171,6 +184,12 @@ footer i {
 .fa-linkedin:hover {
   color: #0961b8;
   transform: 0.35s;
+}
+
+.social .fa-github:hover {
+  transition: 0.35s;
+  color: #000;
+  font-size: 30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -208,8 +227,14 @@ footer i {
   .fa-html5,
   .fa-css3-alt,
   .fa-js-square,
-  .fa-react {
+  .fa-react,
+  .fa-git-alt,
+  .fa-github {
     font-size: 80px;
+  }
+
+  .social .fa-github {
+    font-size: 30px;
   }
 
   .others {

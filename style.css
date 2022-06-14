@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./assets/4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 12px;
+}
+
+h2,
+h3 {
+  color: #3f322b;
+  font-weight: bolder;
+  filter: contrast(1.5);
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #3f322b;
+  padding: 4px 12px;
+  color: #3f322b;
+  cursor: pointer;
+  margin-top: 10px;
+  filter: contrast(1.75);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+button a {
+  text-decoration: none;
+  color: #3f322b;
+}
+
+button:hover {
+  background-color: #c5b3a5;
+  color: #000;
+  transition: 0.35s;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #c0ab96;
+}
+
+.me {
+  display: flex;
+  gap: 15px;
+  flex-direction: column-reverse;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding-left: 5px;
+}
+
+.profile-photo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 15px;
+}
+
+.tecniche {
+  text-align: center;
+}
+
+.tecniche i {
+  padding-left: 8px;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js-square,
+.fa-react {
+  font-size: 40px;
+}
+
+.fa-html5 {
+  color: #d84924;
+}
+
+.fa-css3-alt {
+  color: #134ae1;
+}
+
+.fa-js-square {
+  color: #ead41c;
+}
+
+.fa-react {
+  color: #5ccfee;
+}
+
+.fa-code {
+  color: #134ae1;
+  font-size: 30px;
+}
+
+.others {
+  margin-top: 20px;
+}
+
+.fa-brain,
+.fa-earth-europe,
+.fa-screwdriver-wrench {
+  font-size: 25px;
+  color: azure;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  background-color: #5d4b3e;
+  padding: 55px 0;
+}
+
+footer i {
+  font-size: 25px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  color: #d62d6a;
+}
+
+.fa-linkedin:hover {
+  color: #0961b8;
+  transform: 0.35s;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding-right: 25px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 8px 25px;
+  }
+
+  .me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .fa-html5,
+  .fa-css3-alt,
+  .fa-js-square,
+  .fa-react {
+    font-size: 80px;
+  }
+
+  .others {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .fa-brain,
+  .fa-earth-europe,
+  .fa-screwdriver-wrench {
+    font-size: 40px;
+    color: azure;
+  }
+}

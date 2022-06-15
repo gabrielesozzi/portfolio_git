@@ -1,17 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700;900&family=Syne:wght@700;800&family=Tinos:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
   height: 100vh;
   width: 100%;
-  background-image: url("./assets/4.jpg");
+  background-image: url("./assets/1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale(60%);
+  filter: grayscale(80%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +24,7 @@ header {
 
 h2,
 h3 {
-  color: #3f322b;
+  color: #fff;
   font-weight: bolder;
   filter: contrast(1.5);
 }
@@ -36,9 +39,9 @@ h3 {
 
 button {
   background-color: transparent;
-  border: 1px solid #3f322b;
+  border: 1px solid #fff;
   padding: 4px 12px;
-  color: #3f322b;
+  color: #fff;
   cursor: pointer;
   margin-top: 10px;
   filter: contrast(1.75);
@@ -48,54 +51,54 @@ button {
 
 button a {
   text-decoration: none;
-  color: #3f322b;
+  color: #fff;
 }
 
 button:hover {
-  background-color: #c5b3a5;
-  color: #000;
+  background-color: #9eb19c;
   transition: 0.35s;
+}
+
+button a:hover {
+  color: #000;
 }
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  background-color: #c0ab96;
 }
 
 #about {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
-  background-color: #c0ab96;
+  background-color: #1e1e1e;
 }
 
-.me {
+.card-me {
+  color: #f0f0f0;
   display: flex;
-  gap: 15px;
-  flex-direction: column-reverse;
-}
-
-.info {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 18px;
-  padding-left: 5px;
-  color: #3f322b;
+  margin: 20px 20px;
+  padding: 8px 8px;
+  gap: 30px;
+}
+
+.card-me,
+.tecniche,
+.others {
+  background-color: #282828;
+  -webkit-box-shadow: 2px -2px 14px 13px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 2px -2px 14px 13px rgba(0, 0, 0, 0.48);
+  box-shadow: 2px -2px 14px 13px rgba(0, 0, 0, 0.48);
 }
 
 .profile-photo {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-photo img {
+  height: 250px;
+  width: 250px;
   border-radius: 100%;
-  width: 200px;
-  height: 200px;
+  border: 2px solid #9eb19c;
 }
 
 .skill {
@@ -110,16 +113,13 @@ main {
 
 .tecniche {
   text-align: center;
-  color: #3f322b;
-  background-color: #c5b3a5;
+  color: #f0f0f0;
   padding: 10px 10px;
-  -webkit-box-shadow: 40px 34px 23px -21px rgba(93, 75, 62, 0.7);
-  -moz-box-shadow: 40px 34px 23px -21px rgba(93, 75, 62, 0.7);
-  box-shadow: 40px 34px 23px -21px rgba(93, 75, 62, 0.7);
 }
 
 .tecniche i {
   padding-left: 8px;
+  padding-top: 18px;
 }
 
 .fa-html5,
@@ -147,8 +147,9 @@ main {
   color: #5ccfee;
 }
 
-.fa-code {
-  color: #134ae1;
+.fa-code,
+.fa-caret-down {
+  color: #9eb19c;
   font-size: 30px;
 }
 
@@ -163,16 +164,26 @@ main {
 .others {
   margin-top: 20px;
   padding: 10px 10px;
-  -webkit-box-shadow: -37px 34px 23px -21px rgba(93, 75, 62, 0.7);
-  -moz-box-shadow: -37px 34px 23px -21px rgba(93, 75, 62, 0.7);
-  box-shadow: -37px 34px 23px -21px rgba(93, 75, 62, 0.7);
+}
+
+.others h3,
+h4 {
+  color: #f0f0f0;
+}
+
+.others h4 {
+  color: #b4b4b4;
+}
+
+.fa-screwdriver-wrench {
+  font-size: 25px;
+  color: #9eb19c;
 }
 
 .fa-brain,
-.fa-earth-europe,
-.fa-screwdriver-wrench {
-  font-size: 25px;
-  color: azure;
+.fa-earth-europe {
+  font-size: 18px;
+  color: #9eb19c;
 }
 
 footer {
@@ -180,14 +191,20 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  background-color: #5d4b3e;
+  background-color: #141414;
   padding: 55px 0;
+  color: #f0f0f0;
 }
 
 footer i {
   font-size: 30px;
   padding-right: 15px;
   cursor: pointer;
+  color: #fff;
+}
+
+.social i {
+  color: #fff;
 }
 
 .fa-instagram:hover {
@@ -202,7 +219,7 @@ footer i {
 
 .social .fa-github:hover {
   transition: 0.35s;
-  color: #fff;
+  color: #9eb19c;
   font-size: 30px;
 }
 
@@ -228,19 +245,19 @@ footer i {
     padding: 8px 25px;
   }
 
-  .me {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  .card-me {
+    margin-top: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
-  .info {
-    display: flex;
-    flex-direction: column;
+
+  .card-me p {
+    padding: 30px 0;
   }
 
   .skill {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .fa-html5,
@@ -258,14 +275,15 @@ footer i {
 
   .others {
     display: flex;
-    flex-direction: column;
     gap: 20px;
   }
 
-  .fa-brain,
-  .fa-earth-europe,
   .fa-screwdriver-wrench {
-    font-size: 40px;
-    color: azure;
+    font-size: 30px;
+  }
+
+  .fa-brain,
+  .fa-earth-europe {
+    font-size: 25px;
   }
 }
